@@ -1,29 +1,38 @@
-<h1>Listing procedures</h1>
-
-<table>
+<%- model_class = Procedure -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => Procedure %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Clinic</th>
-      <th colspan="3"></th>
+      <th>ID</th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @procedures.each do |procedure| %>
       <tr>
+        <td><%= procedure.id %></td>
         <td><%= procedure.title %></td>
         <td><%= procedure.description %></td>
-        <td><%= procedure.clinic %></td>
-        <td><%= link_to 'Show', procedure %></td>
-        <td><%= link_to 'Edit', edit_procedure_path(procedure) %></td>
-        <td><%= link_to 'Destroy', procedure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l procedure.created_at, format: :long %></td>
+        <td>
+          <%= link_to procedure_path(procedure), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+            <%= glyph 'info-sign' %>
+            <%= glyph 'pencil' %>
+          <%- end -%>
+          <%= link_to procedure_path(procedure), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+            <%= glyph 'remove' %>
+          <%- end -%>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Procedure', new_procedure_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_procedure_path,
+            :class => 'btn btn-primary' %>
