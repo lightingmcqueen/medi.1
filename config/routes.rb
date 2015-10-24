@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :procedures
+
   resources :clinics
 
   resources :subcategories
