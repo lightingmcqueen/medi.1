@@ -1,65 +1,82 @@
-<%= form_for(@clinic) do |f| %>
-  <% if @clinic.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@clinic.errors.count, "error") %> prohibited this clinic from being saved:</h2>
-
-      <ul>
-      <% @clinic.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_for @clinic, :html => { :class => 'form-horizontal form-model' } do |f| %>
+  <div class="form-group">
+    <%= f.label :title, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :title, :class => 'text-field form-control' %>
     </div>
-  <% end %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :description, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :services, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_area :services, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :address_line_1, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_area :address_line_1, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :address_line_2, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_area :address_line_2, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :city, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :city, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :country, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :country, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone_country_code, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :phone_country_code, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :zipcode, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :zipcode, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :ratings, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :ratings, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :coordinator, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :coordinator, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :accreditations_name, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :accreditations_name, :class => 'text-field form-control' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :services %><br>
-    <%= f.text_area :services %>
-  </div>
-  <div class="field">
-    <%= f.label :address_line_1 %><br>
-    <%= f.text_area :address_line_1 %>
-  </div>
-  <div class="field">
-    <%= f.label :address_line_2 %><br>
-    <%= f.text_area :address_line_2 %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :country %><br>
-    <%= f.text_field :country %>
-  </div>
-  <div class="field">
-    <%= f.label :phone_country_code %><br>
-    <%= f.text_field :phone_country_code %>
-  </div>
-  <div class="field">
-    <%= f.label :zipcode %><br>
-    <%= f.text_field :zipcode %>
-  </div>
-  <div class="field">
-    <%= f.label :ratings %><br>
-    <%= f.text_field :ratings %>
-  </div>
-  <div class="field">
-    <%= f.label :coordinator %><br>
-    <%= f.text_field :coordinator %>
-  </div>
-  <div class="field">
-    <%= f.label :accreditations_name %><br>
-    <%= f.text_field :accreditations_name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  clinics_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 <% end %>
