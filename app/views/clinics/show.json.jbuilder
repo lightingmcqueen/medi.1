@@ -1,0 +1,1 @@
+json.extract! @clinic, :id, :title, :description, :services, :address_line_1, :address_line_2, :city, :country, :phone_country_code, :zipcode, :ratings, :coordinator, :accreditations_name, :created_at, :updated_at
