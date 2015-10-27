@@ -1,22 +1,21 @@
-<%= form_for @subcategory, :html => { :class => 'form-horizontal form-model' } do |f| %>
-  <div class="form-group">
-    <%= f.label :name, :class => 'control-label col-md-2' %>
-    <div class="col-md-10">
-      <%= f.text_field :name, :class => 'text-field form-control' %>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :description, :class => 'control-label col-md-2' %>
-    <div class="col-md-10">
-      <%= f.text_area :description, :class => 'text-field form-control' %>
-    </div>
-  </div>
+<%= form_for @subcategory, html: { multipart: true }  do |f| %>
+<div class="row">
+ <div class="col-md-12"> 
+  <%= f.label :name, :class => '' %>
+  <%= f.text_field :name, :class => '' %>
+  <%= f.label :description, :class => '' %>
+  <%= f.text_area :description, :class => ' ' %>
 
-  <div class="form-group">
-    <div class='col-md-offset-2 col-md-10'>
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                  subcategories_path, :class => 'btn btn-default' %>
-    </div>
   </div>
+</div>
+</div>
+<hr>
+<input id="contact-form-submit" type="submit" value="SUBMIT">
+<img src="images/loader.gif" id="contact-loader" alt="Loading...">
+<div id="error-container"></div>
+<div id="response-container"></div>
+
+
 <% end %>
+
+

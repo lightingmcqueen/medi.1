@@ -1,196 +1,229 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Medi</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="format-detection" content="telephone=no">
-      <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
-      <!-- favicon -->
-      <link rel="shortcut icon" href="/images/favicon-new.png">
-      <!-- Google Web Font -->
-     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-     <!-- bootstrap Style Sheet (caution ! - Do not edit this stylesheet) -->
-      <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="text/css" media="all">
-      <!-- Flexslider stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/flexslider.css" type="text/css" media="all">
-      <!-- Animations stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/animations.css" type="text/css" media="all">
-      <!-- Awesome Font stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/font-awesome.css" type="text/css" media="all">
-      <!-- Datepciker stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/datepicker.css" type="text/css" media="all">
-      <!-- Swipebox stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/swipebox.css" type="text/css" media="all">
-      <!-- meanmenu stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/meanmenu.css" type="text/css" media="all">
-      <!-- Include the site main stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="all">
-      <!-- Include the site responsive  stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/custom-responsive.css" type="text/css" media="all">
+ <title>Medi</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="format-detection" content="telephone=no">
+ <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+ <!-- favicon -->
+ <link rel="shortcut icon" href="/images/favicon-new.png">
+ <!-- Google Web Font -->
+ <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+ <!-- bootstrap Style Sheet (caution ! - Do not edit this stylesheet) -->
+ <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="text/css" media="all">
+ <!-- Flexslider stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/flexslider.css" type="text/css" media="all">
+ <!-- Animations stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/animations.css" type="text/css" media="all">
+ <!-- Awesome Font stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/font-awesome.css" type="text/css" media="all">
+ <!-- Datepciker stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/datepicker.css" type="text/css" media="all">
+ <!-- Swipebox stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/swipebox.css" type="text/css" media="all">
+ <!-- meanmenu stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/meanmenu.css" type="text/css" media="all">
+ <!-- Include the site main stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="all">
+ <!-- Include the site responsive  stylesheet -->
+ <link rel="stylesheet" href="/stylesheets/custom-responsive.css" type="text/css" media="all">
       <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <script src="js/respond.min.js"></script>
       <![endif]-->
 
-  
-  <%= csrf_meta_tags %>
-<meta name="viewport" content="width=device-width, initial-scale=1"/></head>
-<body>
 
-      <div class="header-top clearfix">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-5 ">
-                  <p>Do you have any questions? Contact +1-800-654-3210</p>
-               </div>
-               <!--opening hours-->
-               <div class="col-md-7 text-right">
-                  <p>
-                     Opening Hours : <span>Monday to Saturday - 8am to 9pm</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <header id="header">
-         <div class="container">
-            <!-- Website Logo -->
-            <div class="logo clearfix">
-               <h1>
-                  <a href="index.html">
-                     <!--  <img src="images/temp-images/logo-two.png" alt="Medicalpress"> -->
-                     Mediwalla.com
-                  </a>
-               </h1>
-            </div>
-            <!-- Main Navigation -->
-            <nav class="main-menu">
-               <ul class="header-nav clearfix" id="menu-main-menu">
-                  <li class="current-menu-item page_item">
-                     <a href="index.html">About Us</a>
-                  </li>
-                  <li>
-                     <a href="doctors-three-columns.html">How it works</a>
-                  </li>
-                  <li>
-                     <a href="blog.html">FAQ</a>
-                  </li>
-                  <li>
-                     <a href="#">Sign in</a>
-                  </li>
-                  <li>
-                     <a href="#">Contact</a>
-                  </li>
-               </ul>
-            </nav>
-            <div id="responsive-menu-container"></div>
-         </div>
-      </header>
+      <%= csrf_meta_tags %>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/></head>
+      <body>
 
-<%= yield %>
-
-      <footer id="main-footer" class="site-footer clearfix">
-         <div class="container">
-            <div class="row">
-               <!--about widget-->
-               <div class="col-md-4 col-sm-6">
-                  <section  class="widget animated fadeInLeft">
-                     <h3 class="title">About Mediwalla</h3>
-                     <div class="textwidget">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                           tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                           nisl ut aliquip ex ea commodo consequat.
-                        </p>
-                     </div>
-                  </section>
-               </div>
-               <!--general services-->
-               <div class="col-md-4 col-sm-6  ">
-                  <section class="widget animated fadeInLeft ae-animation-fadeInLeft">
-                     <h3 class="title">General Services</h3>
-                     <ul>
-                        <li>
-                           <a href="#">Immunization</a>
-                        </li>
-                        <li>
-                           <a href="#">Medical Services</a>
-                        </li>
-                        <li>
-                           <a href="#">Surgical</a>
-                        </li>
-                        <li>
-                           <a href="#">Diagnostic Services</a>
-                        </li>
-                        <li>
-                           <a href="#">Pharmacy</a>
-                        </li>
-                     </ul>
-                  </section>
-               </div>
-               <div class="clearfix visible-sm"></div>
-               <!--subscription form-->
-               <div class="col-md-4 col-sm-6">
-                  <section  class="widget animated fadeInLeft">
-                     <h3 class="title">Subscribe!</h3>
-                     <div class="textwidget">Subscribe to my blog for updates</div>
-                     <div>
-                        <form name="subs-form" id="subs_form" class="subs-form" method="post" action="subscription-handler.php">
-                           <label for="subs-name">Name:</label>
-                           <input name="name" id="subs-name" class="required" type="text" title="* Please provide your name" /><br/>
-                           <label for="subs-email">Email:</label>
-                           <input name="email" class="required email" id="subs-email" type="text" title="* Please provide a valid email address" /><br/>
-                           <input type="hidden" name="action" value="send_message">
-                           <input type="hidden" name="nonce" value="">
-                           <input id="subs-form-submit" name="Submit" type="submit" value="SUBMIT" />
-                           <img src="images/loader3.gif" id="subs-loader" alt="Loading...">
-                           <div id="subs-error-container"></div>
-                           <div id="subs-response-container"></div>
-                        </form>
-                     </div>
-                  </section>
-               </div>
-            </div>
-            <div class="footer-bottom animated fadeInDown clearfix">
+         <div class="header-top clearfix">
+            <div class="container">
                <div class="row">
-                  <div class="col-sm-7">
-                     <p>&copy; Copyright 2015. All Rights Reserved by Mediwalla</p>
+                  <div class="col-md-5 ">
+                     <p>Do you have any questions? Contact +1-800-654-3210</p>
                   </div>
-                  <!--footer social icons-->
-                  <div class="col-sm-5 clearfix">
-                     <ul class="footer-social-nav">
-                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a target="_blank" href="skype:skypeusername?add"><i class="fa fa-skype"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
-                     </ul>
+                  <!--opening hours-->
+                  <div class="col-md-7 text-right">
+                     <p>
+                        Opening Hours : <span>Monday to Saturday - 8am to 9pm</span>
+                     </p>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
+         <header id="header">
+            <div class="container">
+               <!-- Website Logo -->
+               <div class="logo clearfix">
+                  <h1>
+                     <a href="index.html">
+                        <!--  <img src="images/temp-images/logo-two.png" alt="Medicalpress"> -->
+                        Mediwalla.com
+                     </a>
+                  </h1>
+               </div>
+               <!-- Main Navigation -->
+               <nav class="main-menu">
+                  <ul class="header-nav clearfix" id="menu-main-menu">
+                     <li class="current-menu-item page_item">
+                        <a href="index.html">About Us</a>
+                     </li>
+                     <li>
+                        <a href="doctors-three-columns.html">How it works</a>
+                     </li>
+                     <li>
+                        <a href="blog.html">FAQ</a>
+                     </li>
+                     <li>
+                        <a href="#">Sign in</a>
+                     </li>
+                     <li>
+                        <a href="#">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div id="responsive-menu-container"></div>
+            </div>
+         </header>
 
- <script type='text/javascript' id='quick-js'></script>
-      <script type='text/javascript' src='/javascript/jquery-1.11.1.min.js'></script>
-      <script type='text/javascript' src='/javascript/bootstrap.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.flexslider-min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.swipebox.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.isotope.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.appear.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.ui.core.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.ui.datepicker.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.validate.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.form.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.autosize.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.meanmenu.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery.velocity.min.js'></script>
-      <script type='text/javascript' src='/javascript/respond.min.js'></script>
-      <script type='text/javascript' src='/javascript/jquery-migrate-1.2.1.min.js'></script>
-      <script type='text/javascript' src='/javascript/custom.js'></script>
-</body>
-</html>
+         <div class="page-top clearfix">
+            <div class="container">
+               <!--page main heading-->
+               <div class="row">
+
+                  <div class="col-lg-3 col-md-4">
+                     <aside class="sidebar clearfix">
+
+                        <!--categories-->
+                        <section class="widget box">
+                           <h3 class="title">Admin</h3>
+                           <ul>
+                              <li><a href="/clinics">Clinic</a></li>
+                              <li><a href="/categories">Procedure Categories</a></li>
+                              <li><a href="/subcategories">Subcategories</a></li>
+                              
+
+                           </ul>
+                        </section>
+                        <!--tags-->
+                     </aside>
+                  </div>
+
+                  <div class="col-lg-9 col-md-8">
+
+                     <article class="page hentry clearfix">
+                        <%= yield %>
+
+
+                     </article> 
+                  </div>       
+
+               </div>
+            </div>
+         </div>
+         <footer id="main-footer" class="site-footer clearfix">
+            <div class="container">
+               <div class="row">
+                  <!--about widget-->
+                  <div class="col-md-4 col-sm-6">
+                     <section  class="widget animated fadeInLeft">
+                        <h3 class="title">About Mediwalla</h3>
+                        <div class="textwidget">
+                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                              tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                           </p>
+                           <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                              nisl ut aliquip ex ea commodo consequat.
+                           </p>
+                        </div>
+                     </section>
+                  </div>
+                  <!--general services-->
+                  <div class="col-md-4 col-sm-6  ">
+                     <section class="widget animated fadeInLeft ae-animation-fadeInLeft">
+                        <h3 class="title">General Services</h3>
+                        <ul>
+                           <li>
+                              <a href="#">Immunization</a>
+                           </li>
+                           <li>
+                              <a href="#">Medical Services</a>
+                           </li>
+                           <li>
+                              <a href="#">Surgical</a>
+                           </li>
+                           <li>
+                              <a href="#">Diagnostic Services</a>
+                           </li>
+                           <li>
+                              <a href="#">Pharmacy</a>
+                           </li>
+                        </ul>
+                     </section>
+                  </div>
+                  <div class="clearfix visible-sm"></div>
+                  <!--subscription form-->
+                  <div class="col-md-4 col-sm-6">
+                     <section  class="widget animated fadeInLeft">
+                        <h3 class="title">Subscribe!</h3>
+                        <div class="textwidget">Subscribe to my blog for updates</div>
+                        <div>
+                           <form name="subs-form" id="subs_form" class="subs-form" method="post" action="subscription-handler.php">
+                              <label for="subs-name">Name:</label>
+                              <input name="name" id="subs-name" class="required" type="text" title="* Please provide your name" /><br/>
+                              <label for="subs-email">Email:</label>
+                              <input name="email" class="required email" id="subs-email" type="text" title="* Please provide a valid email address" /><br/>
+                              <input type="hidden" name="action" value="send_message">
+                              <input type="hidden" name="nonce" value="">
+                              <input id="subs-form-submit" name="Submit" type="submit" value="SUBMIT" />
+                              <img src="images/loader3.gif" id="subs-loader" alt="Loading...">
+                              <div id="subs-error-container"></div>
+                              <div id="subs-response-container"></div>
+                           </form>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+               <div class="footer-bottom animated fadeInDown clearfix">
+                  <div class="row">
+                     <div class="col-sm-7">
+                        <p>&copy; Copyright 2015. All Rights Reserved by Mediwalla</p>
+                     </div>
+                     <!--footer social icons-->
+                     <div class="col-sm-5 clearfix">
+                        <ul class="footer-social-nav">
+                           <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+                           <li><a target="_blank" href="skype:skypeusername?add"><i class="fa fa-skype"></i></a></li>
+                           <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+
+         <script type='text/javascript' id='quick-js'></script>
+         <script type='text/javascript' src='/javascript/jquery-1.11.1.min.js'></script>
+         <script type='text/javascript' src='/javascript/bootstrap.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.flexslider-min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.swipebox.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.isotope.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.appear.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.ui.core.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.ui.datepicker.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.validate.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.form.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.autosize.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.meanmenu.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery.velocity.min.js'></script>
+         <script type='text/javascript' src='/javascript/respond.min.js'></script>
+         <script type='text/javascript' src='/javascript/jquery-migrate-1.2.1.min.js'></script>
+         <script type='text/javascript' src='/javascript/custom.js'></script>
+      </body>
+      </html>

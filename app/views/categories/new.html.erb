@@ -1,45 +1,10 @@
 <%- model_class = Category -%>
-<div class="page-top clearfix">
-	<div class="container">
-		<!--page main heading-->
-		<div class="row">
+<div class="page-contents">
 
-			<div class="col-lg-3 col-md-4">
-				<aside class="sidebar clearfix">
+	<div class="entry-contents">
+		<h4>Categories</h4>
+		<%= render :partial => 'form' %>
 
-					<!--categories-->
-					<section class="widget box">
-						<h3 class="title">Admin</h3>
-						<ul>
-							<li><a href="my-account.html">Categories</a></li>
-							<li><a href="my-reviews.html">Procedures</a></li>
-							
-						</ul>
-					</section>
-					<!--tags-->
-				</aside>
-			</div>
-
-			<div class="col-lg-9 col-md-8">
-
-				<article class="page hentry clearfix">
-
-					<div class="page-contents">
-
-						<div class="entry-contents">
-							<h4>Categories</h4>
-							<%= render :partial => 'form' %>
-
-						</div>
-
-					</div>
-				</article> 
-			</div>       
-
-		</div>
 	</div>
+
 </div>
-
-
-
-

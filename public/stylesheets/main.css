@@ -140,7 +140,7 @@ p {
 .btn {
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
+  /*color: #fff;*/
   padding: 10px 15px;
   border-radius: 0;
 }
