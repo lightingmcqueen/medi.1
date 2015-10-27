@@ -1,4 +1,4 @@
-<%= form_for @clinic, :html => { :class => 'form-horizontal form-model' } do |f| %>
+<%= form_for @clinic, html: { multipart: true }  do |f| %>
   <div class="form-group">
     <%= f.label :title, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
@@ -72,6 +72,11 @@
     </div>
   </div>
 
+      
+    <%= f.label :photos  %>
+    
+      <%= f.file_field :photos %>
+    
   <div class="form-group">
     <div class='col-md-offset-2 col-md-10'>
       <%= f.submit nil, :class => 'btn btn-primary' %>

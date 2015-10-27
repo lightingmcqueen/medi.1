@@ -1,15 +1,11 @@
-<%= form_for @category, :html => { :class => '' } do |f| %>
+<%= form_for @category, html: { multipart: true }  do |f| %>
 <div class="row">
  <div class="col-md-6"> 
   <%= f.label :title, :class => '' %>
   <%= f.text_field :title, :class => '' %>
   <%= f.label :description, :class => '' %>
   <%= f.text_area :description, :class => ' ' %>
-      <div class="form-group">
-    <%= f.label :photos, :class => 'control-label col-md-2' %>
-    <div class="col-md-10">
-      <%= f.file_field :photo %>
-    </div>
+
   </div>
 </div>
 </div>
