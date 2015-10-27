@@ -48,3 +48,4 @@ gem 'omniauth-facebook'
 gem 'bootstrap-sass', '3.3.5'
 gem 'bootstrap-sass-extras'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem "paperclip", "~> 4.3"
